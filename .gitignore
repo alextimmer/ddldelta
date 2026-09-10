@@ -1,0 +1,226 @@
+__pycache__/
+.venv/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer-Logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---------------------------------------------------------------------------
+# Virtual Environments / uv
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version.local
+
+# uv.lock wird bewusst NICHT ignoriert (Anwendung, kein Bibliotheks-Paket).
+# .python-version ebenfalls committen, damit uv/pyenv reproduzierbar bleiben.
+
+# ---------------------------------------------------------------------------
+# Ruff
+# ---------------------------------------------------------------------------
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# mypy / Type-Checker
+# ---------------------------------------------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# ---------------------------------------------------------------------------
+# Tests / Coverage
+# ---------------------------------------------------------------------------
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+nosetests.xml
+.hypothesis/
+cover/
+
+# ---------------------------------------------------------------------------
+# Snowflake CLI / Snowpark
+# ---------------------------------------------------------------------------
+# Lokale Overrides der Projektdefinition (snowflake.yml selbst wird committet)
+snowflake.local.yml
+snowflake.local.yaml
+
+# Arbeits- und Build-Verzeichnisse der Snowflake CLI
+.snowflake/
+output/
+.packages/
+app.zip
+dependencies.zip
+*.snowpark.zip
+
+# Verbindungs- und Konfigurationsdateien mit Zugangsdaten
+config.toml
+connections.toml
+.snowsql/
+snowsql_rt.log*
+snowflake_connection.cfg
+
+# Snowpark-Logs
+snowpark.log*
+*.snowflake.log
+
+# ---------------------------------------------------------------------------
+# Secrets / Credentials
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+rsa_key*
+private_key*
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+
+# ---------------------------------------------------------------------------
+# Daten / Import-Artefakte
+# ---------------------------------------------------------------------------
+data/raw/
+data/staging/
+data/tmp/
+*.parquet
+*.avro
+*.db
+*.sqlite
+*.sqlite3
+*.csv.gz
+*.jsonl.gz
+
+# ---------------------------------------------------------------------------
+# Logs / temporäre Dateien
+# ---------------------------------------------------------------------------
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# ---------------------------------------------------------------------------
+# Notebooks
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ---------------------------------------------------------------------------
+# Dokumentation
+# ---------------------------------------------------------------------------
+docs/_build/
+site/
+
+# ---------------------------------------------------------------------------
+# IDEs / Editoren
+# ---------------------------------------------------------------------------
+.vscode/
+!.vscode/settings.json.example
+!.vscode/extensions.json
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+.ropeproject
+
+# ---------------------------------------------------------------------------
+# Tooling-Caches
+# ---------------------------------------------------------------------------
+.direnv/
+.pdm-python
+.pdm-build/
+__pypackages__/
+.cache_ggshield
+.claude/settings.local.json
+
+# ---------------------------------------------------------------------------
+# Betriebssystem
+# ---------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# ---------------------------------------------------------------------------
+# drawio
+# ---------------------------------------------------------------------------
+# Backup files created by the drawio editor.
+.$*.drawio.bkp
+
+# ---------------------------------------------------------------------------
+# Agent tooling
+# ---------------------------------------------------------------------------
+.superpowers/
+
+docs/*
+*.code-workspace

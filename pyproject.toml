@@ -1,0 +1,28 @@
+[project]
+name = "ddldelta"
+version = "0.1.0"
+description = "Offline DDL-diff migration-plan generator (schemachange, Flyway, CI report)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlglot>=30.17.0",
+]
+
+[project.optional-dependencies]
+jinja = [
+    "jinja2>=3.1",
+]
+
+[project.scripts]
+ddldelta = "ddldelta.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jinja2>=3.1",
+    "mypy>=1.11",
+    "pytest>=9.1.1",
+]
